@@ -6,6 +6,9 @@ test('has title', async ({ page }) => {
 
   // Expect a title "to contain" a substring.
   await expect(page).toHaveTitle(/Playwright/);
+
+  //Changes done in the test case
+  console.log("My changes 1");
 });
 
 test('get started link', async ({ page }) => {
@@ -16,4 +19,7 @@ test('get started link', async ({ page }) => {
 
   // Expects page to have a heading with the name of Installation.
   await expect(page.getByRole('heading', { name: 'Installation' })).toBeVisible();
+
+  //Changes done in the test case
+  console.log("My changes 2");
 });
